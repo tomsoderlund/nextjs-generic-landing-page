@@ -1,17 +1,17 @@
 # nextjs-generic-landing-page
 
-A generic landing page template.
+A generic landing page template, built in Next.js with static HTML export.
 
+- Title/Tagline
+- Signup form
 - Big image
 - Big video
-- Signup form
 - Try the app (interactive)
-- Tagline
 - 3 features
 - 3 testimonials
 - Pricing
-- Footer
 - Login link
+- Footer
 
 
 ## How to use
