@@ -17,17 +17,17 @@ const completeConfig = {
       {
         name: 'Feature 1',
         description: 'This is the 1st important feature. This is totally amazing.',
-        image: 'feature1.jpg'
+        image: '/features/feature1.jpg'
       },
       {
         name: 'Feature 2',
         description: 'This is the 2nd important feature. This is totally amazing.',
-        image: 'feature2.jpg'
+        image: '/features/feature2.jpg'
       },
       {
         name: 'Feature 3',
         description: 'This is the 3rd important feature. This is totally amazing.',
-        image: 'feature3.jpg'
+        image: '/features/feature3.jpg'
       }
     ],
     locale: 'en_US',

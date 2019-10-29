@@ -8,7 +8,7 @@ export default (props) => (
     {config.appFeatures.map(feature => (
       <Block key={feature.name}>
         <h3>{feature.name}</h3>
-        <img src={`/features/${feature.image}`} alt={feature.name} title={feature.description} />
+        <img src={feature.image} alt={feature.name} title={feature.description} />
         <p className='description'>
           {feature.description}
         </p>
