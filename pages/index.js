@@ -17,9 +17,9 @@ const LandingPage = () => (
   <main>
     <PageHead />
     <Headline />
-    <SignupForm />
+    <SignupForm className='darker' />
     <Features />
-    <Image src='/features/feature1.jpg' />
+    <Image src='//picsum.photos/id/1011/1280/720' />
     <Pricing />
     <Testimonials />
     <Footer />
