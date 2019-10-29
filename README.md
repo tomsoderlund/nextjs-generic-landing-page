@@ -12,3 +12,19 @@ A generic landing page template.
 - Pricing
 - Footer
 - Login link
+
+
+## How to use
+
+Run:
+
+  yarn dev
+
+Export static HTML:
+
+  yarn export
+
+Test the static HTML:
+
+  cd out
+  python -m SimpleHTTPServer
