@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Block from '../Block'
+import Block from './Block'
 
-import { config } from '../../config/config'
+import { config } from '../config/config'
 
 export default (props) => (
   <Block {...props}>

@@ -9,11 +9,17 @@ export default ({ children, className = 'block', background, columns, padding = 
         flex: 1;
         ${background ? `background-color: ${background};` : ''}
         ${columns ? `/* Flexbox: */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;` : ''}
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;` : ''}
       }
+
+@media only screen and (max-width: 500px) {
+  div {
+    flex-direction: column;
+  }
+}
     `}
     </style>
   </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Block from '../Block'
+import Block from './Block'
 
 export default (props) => {
   const title = props.src.split('/').pop().split('.').shift()

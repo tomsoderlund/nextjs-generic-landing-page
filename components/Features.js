@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Block from '../Block'
-import { config } from '../../config/config'
+import Block from './Block'
+import { config } from '../config/config'
 
 export default (props) => (
   <Block padding='0 0 1em' columns {...props}>
