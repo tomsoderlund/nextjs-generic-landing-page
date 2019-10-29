@@ -18,13 +18,13 @@ A generic landing page template, built in Next.js with static HTML export.
 
 Run:
 
-  yarn dev
+    yarn dev
 
 Export static HTML:
 
-  yarn export
+    yarn export
 
 Test the static HTML:
 
-  cd out
-  python -m SimpleHTTPServer
+    cd out
+    python -m SimpleHTTPServer
