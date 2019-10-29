@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* #NiceAndSimple: Main - margin:auto */
+main {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+section.content {
+  width: calc(100% - 2.5em);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .content {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  input, button {
+    width: 100%;
+  }
+}
+
+summary {
+  font-size: 1.5em;
+  margin: 1em 0;
+}

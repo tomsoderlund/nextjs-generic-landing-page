@@ -1,0 +1,27 @@
+{
+  "name": "nextjs-generic-landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "standard",
+    "fix": "standard --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ]
+  },
+  "dependencies": {
+    "next": "9.1.1",
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.1"
+  }
+}
