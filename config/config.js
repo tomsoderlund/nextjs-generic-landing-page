@@ -34,12 +34,14 @@ const completeConfig = {
     googleAnalyticsId: 'UA-XXXXXXX-X',
     googleSiteVerification: false,
     databaseUrl: process.env.DATABASE_URL || `postgresql://localhost/${appSlug}`,
-    graphqlPath: '/api/graphql'
+    graphqlPath: '/api/graphql',
+    loginService: `https://login-as-a-service.now.sh/api/${appSlug}`
   },
 
   development: {
     appUrl: `http://localhost:${serverPort}/`,
-    googleAnalyticsId: null
+    googleAnalyticsId: null,
+    // loginService: `http://localhost:3002/api/${appSlug}`
   },
 
   production: {
