@@ -22,7 +22,7 @@ const LandingPage = () => (
       className='darker'
     />
     <Features />
-    <Image src='//picsum.photos/id/1011/1280/720' />
+    <Image src='/features/feature1.jpg' />
     <Pricing />
     <Testimonials />
     <Footer />

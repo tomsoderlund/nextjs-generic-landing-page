@@ -3,10 +3,10 @@ import React from 'react'
 import Block from './Block'
 
 export default (props) => {
-  const title = props.src.split('/').pop().split('.').shift()
+  const imageName = props.src.split('/').pop().split('.').shift()
   return (
     <Block padding='0' {...props}>
-      <img src={props.src} alt={title} title={title} />
+      <img src={props.src} alt={imageName} title={props.title} />
       <style jsx>{`
         img {
           max-width: 100%;
