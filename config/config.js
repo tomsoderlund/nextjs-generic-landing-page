@@ -40,7 +40,7 @@ const completeConfig = {
 
   development: {
     appUrl: `http://localhost:${serverPort}/`,
-    googleAnalyticsId: null,
+    googleAnalyticsId: null
     // loginService: `http://localhost:3002/api/${appSlug}`
   },
 
