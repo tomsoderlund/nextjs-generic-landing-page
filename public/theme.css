@@ -21,6 +21,10 @@ h2 {
   font-size: 1.5em;
 }
 
+h3 {
+  font-size: 1.3em;
+}
+
 a {
   color: #00CED1;
   transition: all 0.2s;
