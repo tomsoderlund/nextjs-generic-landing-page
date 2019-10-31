@@ -25,7 +25,11 @@ const LandingPage = () => (
     <Image src='/features/feature1.jpg' />
     <Pricing />
     <Testimonials />
-    <Footer />
+    <SignupBlock
+      thankyouText='Thank you for signing up!'
+      className='darker'
+    />
+    <Footer children='&copy; Company, Inc.' />
   </main>
 )
 
