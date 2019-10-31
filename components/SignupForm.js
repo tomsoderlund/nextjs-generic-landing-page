@@ -3,9 +3,6 @@ import fetch from 'isomorphic-unfetch'
 
 import { config } from '../config/config'
 
-import Block from './Block'
-import ContainerFlex from './ContainerFlex'
-
 export default (props) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
   const setPersonInfoField = (field, value) => setPersonInfo({ ...personInfo, [field]: value })
@@ -39,39 +36,29 @@ export default (props) => {
   }
 
   return (
-    <Block padding='1em' {...props}>
-      <form onSubmit={handleSubmit}>
-        {!isSubmitted ? (
-          <ContainerFlex>
-            <input
-              id='email'
-              type='email'
-              value={personInfo.email}
-              required
-              placeholder='Your email'
-              onChange={event => setPersonInfoField('email', event.target.value)}
-              className='weld-input'
-              disabled={inProgress}
-            />
-            <button
-              type='submit'
-              className='weld-button-animated always-on'
-              disabled={inProgress}
-            >
-              {props.buttonText || 'Sign up'}
-            </button>
-            {hasErrors ? <p className='color-error-fg'>{hasErrors}</p> : null}
-          </ContainerFlex>
-        ) : (
-          <h3 className='thankyou'>{props.thankyouText || 'Thank you!'}</h3>
-        )}
-        <style jsx>{`
-          .thankyou {
-            margin: 2em 0;
-          }
-        `}
-        </style>
-      </form>
-    </Block>
+    <form className='signup-form' onSubmit={handleSubmit}>
+      {!isSubmitted ? (
+        <>
+          <input
+            id='email'
+            type='email'
+            value={personInfo.email}
+            required
+            placeholder='Your email'
+            onChange={event => setPersonInfoField('email', event.target.value)}
+            disabled={inProgress}
+          />
+          <button
+            type='submit'
+            disabled={inProgress}
+          >
+            {props.buttonText || 'Sign up'}
+          </button>
+          {hasErrors ? <p className='error color-error-fg'>{hasErrors}</p> : null}
+        </>
+      ) : (
+        <h3 className='thankyou'>{props.thankyouText || 'Thank you!'}</h3>
+      )}
+    </form>
   )
 }
