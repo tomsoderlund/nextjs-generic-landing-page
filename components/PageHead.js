@@ -9,7 +9,7 @@ const PageHead = ({ title, description = config.appDescription }) => {
     : `${config.appName} – ${config.appTagline}`
 
   const iconUrl = '/icon.png'
-  const fontString = 'Source+Sans+Pro:400,600italic'
+  const fontString = 'Source+Sans+Pro:400,600'
 
   return (
     <Head>

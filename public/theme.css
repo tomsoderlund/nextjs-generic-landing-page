@@ -2,7 +2,7 @@
 
 body {
   background-color: #FFFFFF;
-  color: #555555;
+  color: #000000;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -11,7 +11,6 @@ body {
 h1, h2, h3 {
   line-height: 1.1em;
   font-weight: 600;
-  font-style: italic;
 }
 
 h1 {
@@ -137,4 +136,6 @@ select:disabled {
 
 .darker {
   background-color: whitesmoke;
+  border-top: 1px solid rgba(255,255,255, 0.4);
+  border-bottom: 1px solid rgba(0,0,0, 0.1);
 }
