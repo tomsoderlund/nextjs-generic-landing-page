@@ -3,9 +3,9 @@ import React from 'react'
 import Block from './Block'
 
 export default (props) => (
-  <Block padding='0 0 1em' columns {...props}>
+  <Block className='columns' padding='0 0 1em' {...props}>
     {props.features.map(feature => (
-      <Block key={feature.name}>
+      <Block key={feature.name} className='rows'>
         <h3>{feature.name}</h3>
         <img src={feature.image} alt={feature.name} title={feature.name} />
         <p className='description'>
