@@ -16,6 +16,7 @@ export default ({ children, className, background, padding = '0 1em' }) => (
         justify-content: center;
         align-items: center;
       }
+
       div.rows {
         display: flex;
         flex-direction: column;
@@ -24,7 +25,7 @@ export default ({ children, className, background, padding = '0 1em' }) => (
       }
 
       @media only screen and (max-width: 500px) {
-        div {
+        div.columns {
           flex-direction: column;
         }
       }
