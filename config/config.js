@@ -21,12 +21,12 @@ const completeConfig = {
       },
       {
         name: 'Feature 2',
-        description: 'This is the 2nd important feature. This is totally amazing.',
+        description: 'This is the 2nd important feature. This is totally crazy amazing.',
         image: '/features/feature2.jpg'
       },
       {
         name: 'Feature 3',
-        description: 'This is the 3rd important feature. This is totally amazing.',
+        description: 'This is the 3rd important feature. This is totally insanely amazing.',
         image: '/features/feature3.jpg'
       }
     ],
@@ -35,7 +35,7 @@ const completeConfig = {
     googleSiteVerification: false,
     databaseUrl: process.env.DATABASE_URL || `postgresql://localhost/${appSlug}`,
     graphqlPath: '/api/graphql',
-    loginService: `https://login-as-a-service.now.sh/api/${appSlug}`
+    leadService: `https://login-as-a-service.now.sh/api/${appSlug}/lead`
   },
 
   development: {

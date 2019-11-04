@@ -11,23 +11,28 @@ import Testimonials from '../components/Testimonials'
 import SignupBlock from '../components/SignupBlock'
 import Footer from '../components/Footer'
 
-// import { config } from '../config/config'
+import { config } from '../config/config'
 
 const LandingPage = () => (
   <main>
     <PageHead />
-    <Headline />
+    <Headline
+      title={config.appName}
+      description={config.appDescription}
+    />
     <SignupBlock
       thankyouText='Thank you for signing up!'
       className='darker'
+      leadService={config.leadService}
     />
-    <Features />
+    <Features features={config.appFeatures} />
     <Image src='/features/feature1.jpg' />
     <Pricing />
     <Testimonials />
     <SignupBlock
       thankyouText='Thank you for signing up!'
       className='darker'
+      leadService={config.leadService}
     />
     <Footer children='&copy; Company, Inc.' />
   </main>

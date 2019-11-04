@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import fetch from 'isomorphic-unfetch'
 
-import { config } from '../config/config'
-
 export default (props) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
   const setPersonInfoField = (field, value) => setPersonInfo({ ...personInfo, [field]: value })
@@ -15,7 +13,7 @@ export default (props) => {
     event.preventDefault()
     setInProgress(true)
     try {
-      const result = await fetch(`${config.loginService}/lead`, {
+      const result = await fetch(props.leadService, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
