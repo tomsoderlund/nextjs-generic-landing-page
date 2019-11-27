@@ -5,6 +5,11 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 ![nextjs-generic-landing-page](docs/github_preview.jpg)
 
 
+## Demo
+
+[nextjs-generic-landing-page.now.sh](https://nextjs-generic-landing-page.now.sh/)
+
+
 ## Components
 
 - [x] Title/Tagline
