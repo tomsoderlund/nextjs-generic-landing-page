@@ -4,7 +4,7 @@ import Block from './Block'
 
 /** [{ name, (description), (imageSrc) }] */
 export default (props) => (
-  <Block className='columns' padding='0 0 1em' {...props}>
+  <Block className='columns' padding='1em 0 2em' {...props}>
     {props.features.map(feature => (
       <Block key={feature.name} className='feature rows'>
         <h3>{feature.name}</h3>
@@ -17,7 +17,7 @@ export default (props) => (
           }
 
           :global(.feature .description) {
-            margin-top: 0;
+            margin-top: 0.5em;
           }
         `}
         </style>

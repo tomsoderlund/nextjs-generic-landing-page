@@ -40,7 +40,9 @@ const LandingPage = () => (
       src='https://www.youtube.com/embed/UjtVVsz-mMg'
       controls={false}
     />
-    <Testimonials />
+    <Testimonials
+      headline='What our customers are saying'
+    />
     <SignupBlock
       thankyouText='Thank you for signing up!'
       className='darker'

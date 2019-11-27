@@ -4,6 +4,6 @@ import Block from './Block'
 
 export default (props) => (
   <Block {...props}>
-    <h2>Testimonials</h2>
+    {props.headline && <h2>{props.headline}</h2>}
   </Block>
 )
