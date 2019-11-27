@@ -18,6 +18,7 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 - [x] Big image
 - [x] Big video
 - [x] 3 features
+- [x] Google Analytics with page & event logging
 - [ ] Try your app (interactive)
 - [ ] 3 testimonials
 - [ ] Pricing
