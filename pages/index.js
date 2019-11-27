@@ -10,6 +10,7 @@ import Pricing from '../components/Pricing'
 import Testimonials from '../components/Testimonials'
 import SignupBlock from '../components/SignupBlock'
 import Footer from '../components/Footer'
+import SocialSharing from '../components/SocialSharing'
 
 import { config } from '../config/config'
 
@@ -19,7 +20,13 @@ const LandingPage = () => (
     <Headline
       title={config.appName}
       description={config.appDescription}
-    />
+    >
+      <SocialSharing
+        link='https://nextjs-generic-landing-page.now.sh/'
+        title={config.appName}
+        body={config.appTagline}
+      />
+    </Headline>
     <SignupBlock
       thankyouText='Thank you for signing up!'
       className='darker'
