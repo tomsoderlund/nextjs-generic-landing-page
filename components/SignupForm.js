@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import fetch from 'isomorphic-unfetch'
+import { googleEvent } from './GoogleAnalytics'
 
 export default (props) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
@@ -21,7 +22,12 @@ export default (props) => {
         },
         body: JSON.stringify(personInfo)
       })
-      if (result.status === 200) { setIsSubmitted(true) } else {
+      if (result.status === 200) {
+        setIsSubmitted(true)
+        if (props.googleEvent) {
+          googleEvent(props.googleEvent)
+        }
+      } else {
         const json = await result.json()
         setHasErrors(json.message)
       }
@@ -48,6 +54,7 @@ export default (props) => {
           />
           <button
             type='submit'
+            className='primary'
             disabled={inProgress}
           >
             {props.buttonText || 'Sign up'}

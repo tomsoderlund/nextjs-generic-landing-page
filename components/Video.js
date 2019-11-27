@@ -2,6 +2,7 @@ import React from 'react'
 
 import Block from './Block'
 
+/** { src, title } */
 export default (props) => {
   const title = props.src.split('/').pop().split('.').shift()
   return (

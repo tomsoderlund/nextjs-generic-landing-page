@@ -14,7 +14,7 @@ export default ({ children, className, background, padding = '0 1em' }) => (
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
       }
 
       div.rows {

@@ -2,15 +2,16 @@ import React from 'react'
 
 import Block from './Block'
 
+/** { src, title } */
 export default (props) => {
   const imageName = props.src.split('/').pop().split('.').shift()
   return (
     <Block padding='0' {...props}>
-      <img src={props.src} alt={imageName} title={props.title} />
+      <img src={props.src} alt={props.title || imageName} title={props.title} />
       <style jsx>{`
         img {
-          max-width: 100%;
-          object-fit: contain;
+          width: 100%;
+          object-fit: cover;
         }
       `}
       </style>
