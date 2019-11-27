@@ -6,6 +6,7 @@ import PageHead from '../components/PageHead'
 import Headline from '../components/Headline'
 import Features from '../components/Features'
 import Image from '../components/Image'
+import Video from '../components/Video'
 import Pricing from '../components/Pricing'
 import Testimonials from '../components/Testimonials'
 import SignupBlock from '../components/SignupBlock'
@@ -35,6 +36,10 @@ const LandingPage = () => (
     <Features features={config.appFeatures} />
     <Image src='/features/feature1.jpg' />
     <Pricing />
+    <Video
+      src='https://www.youtube.com/embed/UjtVVsz-mMg'
+      controls={false}
+    />
     <Testimonials />
     <SignupBlock
       thankyouText='Thank you for signing up!'
