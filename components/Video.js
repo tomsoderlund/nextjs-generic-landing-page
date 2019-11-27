@@ -11,8 +11,8 @@ export default (props) => {
           width='853'
           height='480'
           src={props.src + '?rel=0' + ((props.controls === false) && '&controls=0')}
-          frameborder='0'
-          allowfullscreen
+          frameBorder='0'
+          allowFullScreen
         />
       </div>
       <style jsx>{`
