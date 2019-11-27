@@ -1,8 +1,7 @@
 import React from 'react'
 
 import PageHead from '../components/PageHead'
-// import Block from '../components/Block'
-
+import Block from '../components/Block'
 import Headline from '../components/Headline'
 import Features from '../components/Features'
 import Image from '../components/Image'
@@ -33,6 +32,7 @@ const LandingPage = () => (
       className='darker'
       leadService={config.leadService}
     />
+    <Block padding='1em'>Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a></Block>
     <Features features={config.appFeatures} />
     <Image src='/features/feature1.jpg' />
     <Pricing />
