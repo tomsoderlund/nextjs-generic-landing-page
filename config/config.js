@@ -12,7 +12,7 @@ const completeConfig = {
     appUrl: process.env.APP_URL || '', // Used for GraphQL url - see graphql/apollo.js. Not used/needed by Zeit Now.
     appName: manifest.name,
     appTagline: 'Best landing page template ever',
-    appDescription: 'A generic landing page template, built in Next.js with static HTML export',
+    appDescription: 'A generic landing page template, built in Next.js (React) with static HTML export',
     appFeatures: [
       {
         name: 'Feature 1',
