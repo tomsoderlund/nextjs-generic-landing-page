@@ -15,17 +15,32 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 - [x] Title/Tagline
 - [x] Footer
 - [x] Signup form
-- [x] Big image
-- [x] Big video
+- [x] Image
+- [x] Video
 - [x] 3 features
 - [x] Google Analytics with page & event logging
-- [ ] Try your app (interactive)
+- [ ] Try the app (interactive)
 - [ ] 3 testimonials
 - [ ] Pricing
 - [ ] Login link
 
 
 ## How to use
+
+### How to use 1: Import the components you need
+
+    import { Headline, Video } from 'nextjs-generic-landing-page'
+
+### How to use 2: Clone the entire project
+
+Clone this repository:
+
+    git clone https://github.com/tomsoderlund/nextjs-generic-landing-page.git [MY_APP]
+
+Install dependencies:
+
+    cd [MY_APP]
+    yarn  # or npm install
 
 Run:
 
@@ -39,3 +54,9 @@ Test the static HTML:
 
     cd out
     python -m SimpleHTTPServer
+
+
+## Update the NPM package
+
+    yarn publish:npm
+    yarn publish
