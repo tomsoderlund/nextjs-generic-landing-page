@@ -1,6 +1,6 @@
 {
   "name": "nextjs-generic-landing-page",
-  "version": "0.9.4",
+  "version": "0.9.5",
   "description": "A generic landing page template, built in Next.js (React) with static HTML export",
   "main": "dist/index.js",
   "private": false,
