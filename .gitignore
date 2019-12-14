@@ -89,3 +89,6 @@ typings/
 
 # Next.js Export
 out/
+
+# NPM package
+dist/
