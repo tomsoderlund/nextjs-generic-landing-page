@@ -1,16 +1,18 @@
 import React from 'react'
 
-import PageHead from '../components/PageHead'
-import Block from '../components/Block'
-import Headline from '../components/Headline'
-import Features from '../components/Features'
-import Image from '../components/Image'
-import Video from '../components/Video'
-import Pricing from '../components/Pricing'
-import Testimonials from '../components/Testimonials'
-import SignupBlock from '../components/SignupBlock'
-import Footer from '../components/Footer'
-import SocialSharing from '../components/SocialSharing'
+import {
+  Block,
+  Features,
+  Footer,
+  Headline,
+  Image,
+  PageHead,
+  Pricing,
+  SignupBlock,
+  SocialSharing,
+  Testimonials,
+  Video
+} from '../components'
 
 import { config } from '../config/config'
 
