@@ -1,6 +1,6 @@
 {
   "name": "nextjs-generic-landing-page",
-  "version": "0.9.11",
+  "version": "0.9.12",
   "description": "A generic landing page template, built in Next.js (React) with static HTML export",
   "main": "dist/components/index.js",
   "private": false,
@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start -p 3124",
     "export": "next build && next export",
-    "publish:npm": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next; done && cp package.json dist/",
+    "publish:npm": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next --plugins=styled-jsx/babel; done && cp package.json dist/",
     "lint": "standard",
     "fix": "standard --fix"
   },
