@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import fetch from 'isomorphic-unfetch'
 import { googleEvent } from './GoogleAnalytics'
 
-export default (props) => {
+export default ({ leadService, googleEventName, buttonText, thankyouText }) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
   const setPersonInfoField = (field, value) => setPersonInfo({ ...personInfo, [field]: value })
 
@@ -14,7 +14,7 @@ export default (props) => {
     event.preventDefault()
     setInProgress(true)
     try {
-      const result = await fetch(props.leadService, {
+      const result = await fetch(leadService, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -24,8 +24,8 @@ export default (props) => {
       })
       if (result.status === 200) {
         setIsSubmitted(true)
-        if (props.googleEvent) {
-          googleEvent(props.googleEvent)
+        if (googleEventName) {
+          googleEvent(googleEventName)
         }
       } else {
         const json = await result.json()
@@ -44,7 +44,7 @@ export default (props) => {
       {!isSubmitted ? (
         <>
           <input
-            id='email'
+            name='email'
             type='email'
             value={personInfo.email}
             required
@@ -57,12 +57,12 @@ export default (props) => {
             className='primary'
             disabled={inProgress}
           >
-            {props.buttonText || 'Sign up'}
+            {buttonText || 'Sign up'}
           </button>
           {hasErrors ? <p className='error color-error-fg'>{hasErrors}</p> : null}
         </>
       ) : (
-        <h3 className='thankyou'>{props.thankyouText || 'Thank you!'}</h3>
+        <h3 className='thankyou'>{thankyouText || 'Thank you!'}</h3>
       )}
     </form>
   )
