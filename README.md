@@ -29,7 +29,16 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 
 ### How to use 1: Import the components you need
 
+    yarn add nextjs-generic-landing-page  # or npm install nextjs-generic-landing-page
+
+Then in your code:
+
     import { Headline, Video } from 'nextjs-generic-landing-page'
+
+    <Headline
+      title='My Website'
+      description='Maybe the best website ever'
+    >
 
 ### How to use 2: Clone the entire project
 
