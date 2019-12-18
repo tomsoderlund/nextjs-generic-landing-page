@@ -40,6 +40,8 @@ Then in your code:
       description='Maybe the best website ever'
     >
 
+See [pages/index.js](pages/index.js) for examples on how to use the components.
+
 ### How to use 2: Clone the entire project
 
 Clone this repository:
