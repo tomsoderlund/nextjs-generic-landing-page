@@ -69,5 +69,4 @@ Test the static HTML:
 
 ## Update the NPM package
 
-    yarn prepublish
-    yarn publish
+    yarn publish  # will run 'yarn prepublish' before
