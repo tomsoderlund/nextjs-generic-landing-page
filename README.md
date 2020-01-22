@@ -69,5 +69,5 @@ Test the static HTML:
 
 ## Update the NPM package
 
-    yarn publish:npm
+    yarn prepublish
     yarn publish
