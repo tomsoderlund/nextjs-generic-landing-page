@@ -1,6 +1,6 @@
 {
   "name": "nextjs-generic-landing-page",
-  "version": "0.9.14",
+  "version": "0.9.15",
   "description": "A generic landing page template, built in Next.js (React) with static HTML export",
   "main": "dist/components/index.js",
   "private": false,
@@ -41,7 +41,8 @@
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-fb-like": "^0.5.1",
-    "react-share": "^3.0.1"
+    "react-share": "^3.0.1",
+    "styled-jsx": "latest"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",
