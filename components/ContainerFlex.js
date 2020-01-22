@@ -3,6 +3,7 @@ import React from 'react'
 export default (props) => (
   <section {...props}>
     {props.children}
+
     <style jsx>{`
       section {
         display: flex;
