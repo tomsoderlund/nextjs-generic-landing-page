@@ -27,6 +27,7 @@ const CustomSignupBlock = () => (
 const LandingPage = () => (
   <main>
     <PageHead />
+
     <Headline
       title={config.appName}
       description={config.appDescription}
@@ -37,20 +38,33 @@ const LandingPage = () => (
         body={config.appTagline}
       />
     </Headline>
+
     <CustomSignupBlock />
-    <Block padding='1em'>Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a></Block>
+
+    <Block padding='1em'>
+      Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
+    </Block>
+
     <Features features={config.appFeatures} />
+
     <Image src='/features/feature1.jpg' />
+
     <Pricing />
+
     <Video
       src='https://www.youtube.com/embed/UjtVVsz-mMg'
       controls={false}
     />
+
     <Testimonials
       headline='What our customers are saying'
     />
+
     <CustomSignupBlock />
-    <Footer>&copy; Company, Inc.</Footer>
+
+    <Footer>
+      &copy; Company, Inc.
+    </Footer>
   </main>
 )
 
