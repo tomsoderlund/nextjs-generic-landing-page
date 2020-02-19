@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default ({ children, className, background, padding = '0 1em' }) => (
-  <div className={`block ${className || ''}`}>
+export default ({ children, className, style, background, padding = '0 1em' }) => (
+  <div
+    className={`block ${className || ''}`}
+    style={style}
+  >
     {children}
     <style jsx>{`
       div {
