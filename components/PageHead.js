@@ -9,6 +9,7 @@ const PageHead = ({ title, appName = config.appName, appTagline = config.appTagl
     : `${appName} – ${appTagline}`
 
   const iconUrl = '/icon.png'
+  const thumbnailUrl = '/features/feature1.jpg'
   const fonts = [
     ['Source Sans Pro', '400,600']
   ]
@@ -34,6 +35,7 @@ const PageHead = ({ title, appName = config.appName, appTagline = config.appTagl
       <meta property='og:title' content={pageTitle} />
       <meta property='og:description' content={appDescription} />
       <meta property='og:locale' content={config.locale} />
+      <meta property='og:image' content={thumbnailUrl} />
 
       <link rel='apple-touch-icon' href={iconUrl} />
       {(manifest.display === 'standalone') ? <meta name='apple-mobile-web-app-capable' content='yes' /> : null}
@@ -49,8 +51,6 @@ const PageHead = ({ title, appName = config.appName, appTagline = config.appTagl
 
       <link rel='canonical' href={websiteUrl} />
       <meta property='og:url' content={websiteUrl} />
-
-      <meta property='og:image' content={thumbnailUrl} />
     */}
 
       {config.googleSiteVerification ? <meta name='google-site-verification' content={config.googleSiteVerification} /> : null}
