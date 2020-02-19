@@ -9,7 +9,9 @@ const PageHead = ({ title, appName = config.appName, appTagline = config.appTagl
     : `${appName} – ${appTagline}`
 
   const iconUrl = '/icon.png'
-  const fonts = ['Source+Sans+Pro:400,600']
+  const fonts = [
+    ['Source Sans Pro', '400,600']
+  ]
 
   return (
     <Head>
@@ -22,7 +24,7 @@ const PageHead = ({ title, appName = config.appName, appTagline = config.appTagl
 
       <link rel='manifest' href='/manifest.json' />
 
-      {fonts.map(fontString => <link key={fontString} rel='stylesheet' href={`https://fonts.googleapis.com/css?family=${fontString}&display=swap`} />)}
+      {fonts.map(font => <link key={font[0]} rel='stylesheet' href={`https://fonts.googleapis.com/css?family=${`${font[0].replace(/ /g, '+')}${font[1] ? ':' + font[1] : ''}`}&display=swap`} />)}
       <link rel='stylesheet' href='/app.css' />
       <link rel='stylesheet' href='/theme.css' />
 
