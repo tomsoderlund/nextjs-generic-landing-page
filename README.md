@@ -27,7 +27,7 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 
 ## How to use
 
-### How to use 1: Import the components you need
+### How to use 1: Import just the components you need
 
     yarn add nextjs-generic-landing-page  # or npm install nextjs-generic-landing-page
 
@@ -47,6 +47,10 @@ See [pages/index.js](pages/index.js) for examples on how to use the components.
 Clone this repository:
 
     git clone https://github.com/tomsoderlund/nextjs-generic-landing-page.git [MY_APP]
+
+Remove the `.git` folder since you want to create a new repository:
+
+    rm -rf .git
 
 Install dependencies:
 
