@@ -29,7 +29,7 @@ const LandingPage = () => (
     <PageHead />
     <Headline
       title={config.appName}
-      description={config.appTagline}
+      description={config.appDescription}
     >
       <SocialSharing
         link={config.appUrl}
