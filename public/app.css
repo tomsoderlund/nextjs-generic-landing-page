@@ -47,6 +47,10 @@ footer {
   color: gray;
 }
 
+footer a {
+  color: inherit;
+}
+
 .signup-form .thankyou {
   margin: 2em 0;
 }
