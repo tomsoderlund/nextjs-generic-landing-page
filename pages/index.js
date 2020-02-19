@@ -16,24 +16,28 @@ import {
 
 import { config } from '../config/config'
 
+const CustomSignupBlock = () => (
+  <SignupBlock
+    thankyouText='Thank you for signing up!'
+    className='darker'
+    leadService={config.leadService}
+  />
+)
+
 const LandingPage = () => (
   <main>
     <PageHead />
     <Headline
       title={config.appName}
-      description={config.appDescription}
+      description={config.appTagline}
     >
       <SocialSharing
-        link='https://nextjs-generic-landing-page.now.sh/'
+        link={config.appUrl}
         title={config.appName}
         body={config.appTagline}
       />
     </Headline>
-    <SignupBlock
-      thankyouText='Thank you for signing up!'
-      className='darker'
-      leadService={config.leadService}
-    />
+    <CustomSignupBlock />
     <Block padding='1em'>Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a></Block>
     <Features features={config.appFeatures} />
     <Image src='/features/feature1.jpg' />
@@ -45,11 +49,7 @@ const LandingPage = () => (
     <Testimonials
       headline='What our customers are saying'
     />
-    <SignupBlock
-      thankyouText='Thank you for signing up!'
-      className='darker'
-      leadService={config.leadService}
-    />
+    <CustomSignupBlock />
     <Footer children='&copy; Company, Inc.' />
   </main>
 )
