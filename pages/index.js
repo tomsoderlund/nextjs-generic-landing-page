@@ -50,7 +50,7 @@ const LandingPage = () => (
       headline='What our customers are saying'
     />
     <CustomSignupBlock />
-    <Footer children='&copy; Company, Inc.' />
+    <Footer>&copy; Company, Inc.</Footer>
   </main>
 )
 
