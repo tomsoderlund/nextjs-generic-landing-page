@@ -9,7 +9,7 @@ const completeConfig = {
   default: {
     serverPort,
     appSlug,
-    appUrl: process.env.APP_URL || '', // Used for GraphQL url - see graphql/apollo.js. Not used/needed by Zeit Now.
+    appUrl: `https://${appSlug}.now.sh/`,
     appName: manifest.name,
     appTagline: 'Best landing page template ever',
     appDescription: 'Best landing page template ever. A generic landing page template, built in Next.js (React) with static HTML export',
