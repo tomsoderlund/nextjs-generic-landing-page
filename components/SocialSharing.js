@@ -10,10 +10,10 @@ import {
 } from 'react-share'
 import FacebookLike from 'react-fb-like'
 
-const SocialSharing = ({ link, title, body, styles = { cursor: 'pointer', display: 'inline-block', marginLeft: '0.3em', outline: 'none' } }) => (
+const SocialSharing = ({ link, facebookLink, title, body, styles = { cursor: 'pointer', display: 'inline-block', marginLeft: '0.3em', outline: 'none' } }) => (
   <div>
     <FacebookLike
-      href={link}
+      href={facebookLink || link}
       layout='button_count'
       showFaces={false}
       share={false}
