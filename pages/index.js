@@ -45,7 +45,7 @@ const LandingPage = () => (
       <ContainerFlex>
         <span>Follow:{' '}</span>
         <SocialFollow
-          facebookHref='https://www.facebook.com/tomorroworldcom/'
+          facebookLink='https://www.facebook.com/tomorroworldcom/'
           twitterName='tomsoderlund'
           instagramName='tomsoderlund'
         />

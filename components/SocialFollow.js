@@ -3,11 +3,11 @@ import { TwitterFollowButton } from 'react-twitter-embed'
 
 import InstagramFollowButton from './InstagramFollowButton'
 
-const SocialFollow = ({ facebookHref, twitterName, instagramName }) => (
+const SocialFollow = ({ facebookLink, twitterName, instagramName }) => (
   <span className='social-follow'>
-    {facebookHref && (
+    {facebookLink && (
       <FacebookLike
-        href={facebookHref}
+        href={facebookLink}
         layout='button_count'
         showFaces={false}
         share={false}
