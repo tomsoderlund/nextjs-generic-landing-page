@@ -2,6 +2,7 @@ import React from 'react'
 
 import {
   Block,
+  ContainerFlex,
   Features,
   Footer,
   Headline,
@@ -9,6 +10,7 @@ import {
   PageHead,
   Pricing,
   SignupBlock,
+  SocialFollow,
   SocialSharing,
   Testimonials,
   Video
@@ -32,11 +34,22 @@ const LandingPage = () => (
       title={config.appName}
       description={config.appDescription}
     >
-      <SocialSharing
-        link={config.appUrl}
-        title={config.appName}
-        body={config.appTagline}
-      />
+      <ContainerFlex>
+        <span>Share:{' '}</span>
+        <SocialSharing
+          link={config.appUrl}
+          title={config.appName}
+          body={config.appTagline}
+        />
+      </ContainerFlex>
+      <ContainerFlex>
+        <span>Follow:{' '}</span>
+        <SocialFollow
+          facebookHref='https://www.facebook.com/tomorroworldcom/'
+          twitterName='tomsoderlund'
+          instagramName='tomsoderlund'
+        />
+      </ContainerFlex>
     </Headline>
 
     <CustomSignupBlock />

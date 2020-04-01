@@ -42,6 +42,7 @@
     "react-dom": "16.11.0",
     "react-fb-like": "^0.5.1",
     "react-share": "^3.0.1",
+    "react-twitter-embed": "^3.0.3",
     "styled-jsx": "latest"
   },
   "devDependencies": {
