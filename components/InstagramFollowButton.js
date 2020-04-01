@@ -27,6 +27,7 @@ const InstagramFollowButton = ({ screenName }) => (
         padding: 3.5px;
         cursor: pointer;
         text-decoration: none;
+        white-space: nowrap;
       }
       a:hover {
         opacity: initial;
