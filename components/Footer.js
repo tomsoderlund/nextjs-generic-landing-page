@@ -10,6 +10,7 @@ export default ({ children }) => (
         font-size: 0.7em;
         padding: 1em;
       }
-    `}</style>
+    `}
+    </style>
   </footer>
 )
