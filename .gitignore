@@ -92,3 +92,5 @@ out/
 
 # NPM package
 dist/
+
+.now
