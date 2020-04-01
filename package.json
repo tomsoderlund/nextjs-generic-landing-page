@@ -1,6 +1,6 @@
 {
   "name": "nextjs-generic-landing-page",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A generic landing page template, built in Next.js (React) with static HTML export",
   "main": "dist/components/index.js",
   "private": false,
@@ -37,13 +37,13 @@
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
-    "next": "latest",
+    "next": "^9.3.3",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-fb-like": "^0.5.1",
     "react-share": "^3.0.1",
     "react-twitter-embed": "^3.0.3",
-    "styled-jsx": "latest"
+    "styled-jsx": "^3.2.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",
