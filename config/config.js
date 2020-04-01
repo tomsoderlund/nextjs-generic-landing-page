@@ -17,7 +17,9 @@ const completeConfig = {
       {
         name: 'Feature 1',
         description: 'This is the 1st important feature. This is totally amazing.',
-        imageSrc: '/features/feature1.jpg'
+        imageSrc: '/features/feature1.jpg',
+        link: 'https://www.tomorroworld.com/',
+        target: '_blank'
       },
       {
         name: 'Feature 2',
