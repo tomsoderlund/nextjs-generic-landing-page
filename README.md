@@ -38,7 +38,7 @@ Then in your code:
     <Headline
       title='My Website'
       description='Maybe the best website ever'
-    >
+    />
 
 See [pages/index.js](pages/index.js) for examples on how to use the components.
 
