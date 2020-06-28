@@ -74,3 +74,8 @@ Test the static HTML:
 ## Update the NPM package
 
     yarn publish  # will run 'yarn prepublish' before
+
+## styled-jsx reference in package.json?
+
+Needed?
+Potential problems with version collisions?
