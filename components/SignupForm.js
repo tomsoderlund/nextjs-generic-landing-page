@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import fetch from 'isomorphic-unfetch'
-import { googleEvent } from './GoogleAnalytics'
 
-export default ({ leadService, googleEventName, buttonText, thankyouText }) => {
+import { googleEvent } from '../GoogleAnalytics'
+
+export default ({ leadService, googleEventName = 'Lead sign up', buttonText = 'Sign up', thankyouText = 'Thank you!' }) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
   const setPersonInfoField = (field, value) => setPersonInfo({ ...personInfo, [field]: value })
 
@@ -57,12 +58,12 @@ export default ({ leadService, googleEventName, buttonText, thankyouText }) => {
             className='primary'
             disabled={inProgress}
           >
-            {buttonText || 'Sign up'}
+            {buttonText}
           </button>
           {hasErrors ? <p className='error color-error-fg'>{hasErrors}</p> : null}
         </>
       ) : (
-        <h3 className='thankyou'>{thankyouText || 'Thank you!'}</h3>
+        <h3 className='thankyou'>{thankyouText}</h3>
       )}
     </form>
   )
