@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start -p 3010",
     "export": "next build && next export",
-    "prepublish": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next --plugins=styled-jsx/babel; done && cp package.json dist/",
+    "x-prepublish": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next --plugins=styled-jsx/babel; done && cp package.json dist/",
     "lint": "standard",
     "fix": "standard --fix"
   },
