@@ -11,7 +11,7 @@ const PageHead = ({ title, appName = config.appName, appTagline = config.appTagl
   const iconUrl = '/icon.png'
   const thumbnailUrl = '/features/feature1.jpg'
   const fonts = [
-    ['Source Sans Pro', '400,600']
+    // ['Source Sans Pro', '400,600']
   ]
 
   return (
