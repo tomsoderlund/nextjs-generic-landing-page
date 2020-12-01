@@ -2,7 +2,7 @@ const packageJson = require('../package.json')
 const manifest = require('../public/manifest.json')
 
 const appSlug = packageJson.name
-const serverPort = process.env.PORT || 3124
+const serverPort = process.env.PORT || 3010
 
 const completeConfig = {
 

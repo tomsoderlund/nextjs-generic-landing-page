@@ -5,10 +5,10 @@
   "main": "dist/components/index.js",
   "private": false,
   "scripts": {
-    "now": "now dev --listen 3124",
-    "dev": "next dev -p 3124",
+    "now": "now dev --listen 3010",
+    "dev": "next dev -p 3010",
     "build": "next build",
-    "start": "next start -p 3124",
+    "start": "next start -p 3010",
     "export": "next build && next export",
     "prepublish": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next --plugins=styled-jsx/babel; done && cp package.json dist/",
     "lint": "standard",
