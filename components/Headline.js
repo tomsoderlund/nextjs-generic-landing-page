@@ -3,7 +3,7 @@ import React from 'react'
 import Block from './Block'
 
 /** { title, description } */
-export default (props) => (
+const Headline = (props) => (
   <Block
     padding='1em'
     className='headline color-header-bg color-background-fg'
@@ -14,3 +14,5 @@ export default (props) => (
     {props.children && <>{props.children}</>}
   </Block>
 )
+
+export default Headline

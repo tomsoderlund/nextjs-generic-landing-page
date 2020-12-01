@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default (props) => (
+const ContainerFlex = (props) => (
   <section {...props}>
     {props.children}
 
@@ -22,3 +22,5 @@ export default (props) => (
     </style>
   </section>
 )
+
+export default ContainerFlex

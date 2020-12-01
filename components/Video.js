@@ -3,7 +3,7 @@ import React from 'react'
 import Block from './Block'
 
 /** { src, title } */
-export default (props) => {
+const Video = (props) => {
   return (
     <Block padding='0' {...props}>
       <div className='video-container'>
@@ -36,3 +36,5 @@ export default (props) => {
     </Block>
   )
 }
+
+export default Video

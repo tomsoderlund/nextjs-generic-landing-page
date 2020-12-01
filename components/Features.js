@@ -4,7 +4,7 @@ import Block from './Block'
 import LinkOptional from './LinkOptional'
 
 /** [{ name, (description), (imageSrc) }] */
-export default (props) => (
+const Features = (props) => (
   <Block className='columns' padding='1em 0 2em' {...props}>
     {props.features.map(feature => (
       <LinkOptional
@@ -41,3 +41,5 @@ export default (props) => (
     ))}
   </Block>
 )
+
+export default Features

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ children, className, style, background, padding = '0 1em' }) => (
+const Block = ({ children, className, style, background, padding = '0 1em' }) => (
   <div
     className={`block ${className || ''}`}
     style={style}
@@ -36,3 +36,5 @@ export default ({ children, className, style, background, padding = '0 1em' }) =
     </style>
   </div>
 )
+
+export default Block

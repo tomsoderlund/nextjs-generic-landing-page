@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import fetch from 'isomorphic-unfetch'
 
-import { googleEvent } from '../GoogleAnalytics'
+import { googleEvent } from './GoogleAnalytics'
 
-export default ({ leadService, googleEventName = 'Lead sign up', buttonText = 'Sign up', thankyouText = 'Thank you!' }) => {
+const SignupForm = ({ leadService, googleEventName = 'Lead sign up', buttonText = 'Sign up', thankyouText = 'Thank you!' }) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
   const setPersonInfoField = (field, value) => setPersonInfo({ ...personInfo, [field]: value })
 
@@ -68,3 +68,5 @@ export default ({ leadService, googleEventName = 'Lead sign up', buttonText = 'S
     </form>
   )
 }
+
+export default SignupForm

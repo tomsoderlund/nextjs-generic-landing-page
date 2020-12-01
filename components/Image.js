@@ -3,7 +3,7 @@ import React from 'react'
 import Block from './Block'
 
 /** { src, title } */
-export default (props) => {
+const Image = (props) => {
   const imageName = props.src.split('/').pop().split('.').shift()
   return (
     <Block padding='0' {...props}>
@@ -18,3 +18,5 @@ export default (props) => {
     </Block>
   )
 }
+
+export default Image

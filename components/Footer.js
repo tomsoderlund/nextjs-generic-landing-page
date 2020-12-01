@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ children }) => (
+const Footer = ({ children }) => (
   <footer
     className='color-header-bg color-background-fg'
   >
@@ -14,3 +14,5 @@ export default ({ children }) => (
     </style>
   </footer>
 )
+
+export default Footer
