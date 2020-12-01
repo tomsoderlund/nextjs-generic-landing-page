@@ -1,12 +1,8 @@
 import {
-  TwitterShareButton,
-  TwitterIcon,
-  FacebookShareButton,
-  FacebookIcon,
-  LinkedinShareButton,
-  LinkedinIcon,
-  EmailShareButton,
-  EmailIcon
+  TwitterShareButton, TwitterIcon,
+  FacebookShareButton, FacebookIcon,
+  LinkedinShareButton, LinkedinIcon,
+  EmailShareButton, EmailIcon
 } from 'react-share'
 
 const SocialSharing = ({ link, title, body, styles = { cursor: 'pointer', display: 'inline-block', marginLeft: '0.3em', outline: 'none' } }) => (

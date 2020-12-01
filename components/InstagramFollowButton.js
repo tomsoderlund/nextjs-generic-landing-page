@@ -40,4 +40,5 @@ const InstagramFollowButton = ({ screenName }) => (
     </style>
   </a>
 )
+
 export default InstagramFollowButton

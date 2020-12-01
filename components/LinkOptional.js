@@ -19,4 +19,5 @@ const LinkOptional = (props) => {
       )
   )
 }
+
 export default LinkOptional

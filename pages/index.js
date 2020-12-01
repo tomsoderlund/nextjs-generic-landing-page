@@ -1,13 +1,15 @@
+// External packages used:
+//   yarn add react-share react-twitter-embed react-fb-like
 import React from 'react'
 
 import {
+  PageHead,
   Block,
   ContainerFlex,
   Features,
   Footer,
   Headline,
   Image,
-  PageHead,
   Pricing,
   SignupBlock,
   SocialFollow,
@@ -17,14 +19,6 @@ import {
 } from '../components'
 
 import { config } from '../config/config'
-
-const CustomSignupBlock = () => (
-  <SignupBlock
-    thankyouText='Thank you for signing up!'
-    className='darker'
-    leadService={config.leadService}
-  />
-)
 
 const LandingPage = () => (
   <main>
@@ -42,7 +36,7 @@ const LandingPage = () => (
           body={config.appTagline}
         />
       </ContainerFlex>
-      <ContainerFlex>
+      <ContainerFlex align='flex-start' margin='1em 0 0'>
         <span>Follow:{' '}</span>
         <SocialFollow
           facebookLink='https://www.facebook.com/tomorroworldcom/'
@@ -82,3 +76,11 @@ const LandingPage = () => (
 )
 
 export default LandingPage
+
+const CustomSignupBlock = () => (
+  <SignupBlock
+    thankyouText='Thank you for signing up!'
+    className='darker'
+    leadService={config.leadService}
+  />
+)
