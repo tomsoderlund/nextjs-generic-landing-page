@@ -47,10 +47,6 @@
     "styled-jsx": "latest"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
-    "babel-preset-next": "^1.2.0",
-    "standard": "^14.3.1",
-    "styled-jsx": "^3.3.2"
+    "standard": "^14.3.1"
   }
 }
