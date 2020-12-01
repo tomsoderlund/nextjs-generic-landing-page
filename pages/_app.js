@@ -2,7 +2,7 @@ import React from 'react'
 import App from 'next/app'
 import Router from 'next/router'
 
-import { googlePageview } from '../components/GoogleAnalytics'
+import { googlePageview } from 'components/page/GoogleAnalytics'
 
 Router.events.on('routeChangeComplete', path => googlePageview(path))
 

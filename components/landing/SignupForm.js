@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { googleEvent } from './GoogleAnalytics'
+import { googleEvent } from '../page/GoogleAnalytics'
 
 const SignupForm = ({ leadService, googleEventName = 'Lead sign up', buttonText = 'Sign up', thankyouText = 'Thank you!' }) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })

@@ -16,9 +16,9 @@ import {
   SocialSharing,
   Testimonials,
   Video
-} from '../components'
+} from 'components'
 
-import { config } from '../config/config'
+import { config } from 'config/config'
 
 const LandingPage = () => (
   <main>

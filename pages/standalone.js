@@ -12,8 +12,8 @@ import FacebookLike from 'react-fb-like'
 import { TwitterFollowButton } from 'react-twitter-embed'
 
 import { config } from 'config/config'
-import { googleEvent } from 'components/GoogleAnalytics'
 
+import { googleEvent } from 'components/page/GoogleAnalytics'
 import { PageHead } from 'components'
 
 const LandingPage = () => (
