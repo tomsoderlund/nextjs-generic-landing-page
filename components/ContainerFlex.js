@@ -8,9 +8,10 @@ const ContainerFlex = (props) => (
       section {
         display: flex;
         flex-direction: ${props.direction || 'row'};
-        justify-content: center;
-        align-items: center;
+        justify-content: ${props.justify || 'center'};
+        align-items: ${props.align || 'center'};
         width: 100%;
+        margin: ${props.margin || '0'};
       }
 
       @media only screen and (max-width: ${props.phoneBreakpoint || 480}px) {

@@ -31,7 +31,11 @@ const SocialFollow = ({ facebookLink, twitterName, instagramName }) => (
         display: inline-flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+      }
+
+      .social-follow > :global(*) {
+        margin: 0 0.5em;
       }
     `}
     </style>
