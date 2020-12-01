@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import fetch from 'isomorphic-unfetch'
 
 import { googleEvent } from './GoogleAnalytics'
 
@@ -15,7 +14,7 @@ const SignupForm = ({ leadService, googleEventName = 'Lead sign up', buttonText 
     event.preventDefault()
     setInProgress(true)
     try {
-      const result = await fetch(leadService, {
+      const result = await fetch(leadService, { // eslint-disable-line no-undef
         method: 'POST',
         headers: {
           Accept: 'application/json',
