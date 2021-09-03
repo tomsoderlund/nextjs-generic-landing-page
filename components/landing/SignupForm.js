@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 
 import { googleEvent } from '../page/GoogleAnalytics'
 
-const SignupForm = ({ leadService, googleEventName = 'Lead sign up', buttonText = 'Sign up', thankyouText = 'Thank you!' }) => {
+// leadService: `https://login-as-a-service.now.sh/api/${appSlug}/lead`
+const SignupForm = ({ leadService, googleEventName = 'lead_signup', buttonText = 'Sign up', thankyouText = 'Thank you!' }) => {
   const [personInfo, setPersonInfo] = useState({ email: '' })
   const setPersonInfoField = (field, value) => setPersonInfo({ ...personInfo, [field]: value })
 
@@ -54,7 +55,7 @@ const SignupForm = ({ leadService, googleEventName = 'Lead sign up', buttonText 
           />
           <button
             type='submit'
-            className='primary'
+            className={'primary progress-animation' + (inProgress ? ' in-progress' : '')}
             disabled={inProgress}
           >
             {buttonText}
