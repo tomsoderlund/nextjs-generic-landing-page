@@ -2,12 +2,13 @@
 
 A generic landing page template, built in Next.js (React) with static HTML export.
 
-![nextjs-generic-landing-page](docs/github_preview.jpg)
-
 Can be used as:
 
 1. Hosted Next.js site
 2. Use `yarn export` to export pure HTML pages
+
+![nextjs-generic-landing-page](docs/github_preview.jpg)
+
 
 ## Demo
 
