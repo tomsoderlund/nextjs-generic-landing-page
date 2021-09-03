@@ -4,10 +4,14 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 
 ![nextjs-generic-landing-page](docs/github_preview.jpg)
 
+Can be used as:
+
+1. Hosted Next.js site
+2. Use `yarn export` to export pure HTML pages
 
 ## Demo
 
-[nextjs-generic-landing-page.now.sh](https://nextjs-generic-landing-page.now.sh/)
+[Demo of nextjs-generic-landing-page hosted on Vercel](https://nextjs-generic-landing-page.vercel.app/)
 
 
 ## Components
@@ -23,6 +27,7 @@ A generic landing page template, built in Next.js (React) with static HTML expor
 - [ ] 3 testimonials
 - [ ] Pricing
 - [ ] Login link
+- [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
 
 
 ## How to use
