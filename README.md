@@ -12,6 +12,13 @@ _Note: if you need a template for a complete PWA web app (with database etc) in 
 ![nextjs-generic-landing-page](docs/github_preview.jpg)
 
 
+## Support this project
+
+Did you or your company find `nextjs-generic-landing-page` useful? Please consider giving a small donation, it helps me spend more time on open-source projects:
+
+[![Support Tom on Ko-Fi.com](https://www.tomsoderlund.com/ko-fi_tomsoderlund_50.png)](https://ko-fi.com/tomsoderlund)
+
+
 ## Demo
 
 [Demo of nextjs-generic-landing-page hosted on Vercel](https://nextjs-generic-landing-page.vercel.app/)
