@@ -1,12 +1,12 @@
 {
   "name": "nextjs-generic-landing-page",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A generic landing page template, built in Next.js (React) with static HTML export",
   "main": "dist/components/index.js",
   "private": false,
   "scripts": {
-    "now": "now dev --listen 3010",
     "dev": "next dev -p 3010",
+    "vercel": "echo 'Running as Vercel serverless'; vercel dev --listen 3010",
     "build": "next build",
     "start": "next start -p 3010",
     "export": "next build && next export",
@@ -36,7 +36,7 @@
     }
   },
   "dependencies": {
-    "next": "^10.0.3",
+    "next": "^11.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-fb-like": "^0.5.1",
@@ -47,6 +47,6 @@
     "styled-jsx": "latest"
   },
   "devDependencies": {
-    "standard": "^14.3.1"
+    "standard": "^14.3.4"
   }
 }
