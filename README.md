@@ -7,6 +7,8 @@ Can be used as:
 1. Hosted Next.js site
 2. Use `yarn export` to export pure HTML pages
 
+_Note: if you need a template for a complete PWA web app (with database etc) in Next.js, check out [nextjs-pwa-firebase-boilerplate](https://github.com/tomsoderlund/nextjs-pwa-firebase-boilerplate)._
+
 ![nextjs-generic-landing-page](docs/github_preview.jpg)
 
 
