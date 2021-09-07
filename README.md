@@ -33,11 +33,11 @@ Did you or your company find `nextjs-generic-landing-page` useful? Please consid
 - [x] Video
 - [x] 3 features
 - [x] Google Analytics with page & event logging
-- [ ] Try the app (interactive)
-- [ ] 3 testimonials
+- [ ] Testimonials (3 people)
 - [ ] Pricing
 - [ ] Login link
 - [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
+- [ ] Try the app (interactive)
 
 
 ## How to use
@@ -63,9 +63,9 @@ Clone this repository:
 
     git clone https://github.com/tomsoderlund/nextjs-generic-landing-page.git [MY_APP]
 
-Remove the `.git` folder since you want to create a new repository:
+Remove the `.git` folder (since you want to create a new repository) and other template stuff:
 
-    rm -rf .git
+    rm -rf .git docs/ public/features/*.jpg
 
 Install dependencies:
 
