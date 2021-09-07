@@ -33,8 +33,8 @@ Did you or your company find `nextjs-generic-landing-page` useful? Please consid
 - [x] Video
 - [x] 3 features
 - [x] Google Analytics with page & event logging
+- [ ] Pricing/product comparison table
 - [ ] Testimonials (3 people)
-- [ ] Pricing
 - [ ] Login link
 - [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
 - [ ] Try the app (interactive)
