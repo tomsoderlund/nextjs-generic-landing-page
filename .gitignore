@@ -93,4 +93,5 @@ out/
 # NPM package
 dist/
 
+.vercel
 .now

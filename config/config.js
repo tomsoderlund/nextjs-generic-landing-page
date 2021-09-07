@@ -9,7 +9,7 @@ const completeConfig = {
   default: {
     serverPort,
     appSlug,
-    appUrl: `https://${appSlug}.now.sh/`,
+    appUrl: `https://${appSlug}.vercel.app/`,
     appName: manifest.name,
     appTagline: 'Best landing page template ever',
     appDescription: 'Best landing page template ever. A generic landing page template, built in Next.js (React) with static HTML export',
@@ -35,7 +35,7 @@ const completeConfig = {
     locale: 'en_US',
     googleAnalyticsId: 'UA-XXXXXXX-X',
     googleSiteVerification: false,
-    leadService: `https://login-as-a-service.now.sh/api/${appSlug}/lead`
+    leadService: `https://login-as-a-service.vercel.app/api/${appSlug}/lead`
   },
 
   development: {
