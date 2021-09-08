@@ -6,7 +6,7 @@ import LinkOptional from './LinkOptional'
 /** [{ name, (description), (imageSrc) }] */
 const Features = (props) => (
   <Block className='columns' padding='1em 0 2em' {...props}>
-    {props.features.map(feature => (
+    {props.features.map((feature, featureIndex) => (
       <LinkOptional
         key={feature.name}
         href={feature.link}
@@ -14,7 +14,7 @@ const Features = (props) => (
         target={feature.target}
         className='link-wrapper'
       >
-        <Block className='feature rows'>
+        <Block className='feature rows' padding={(featureIndex === 0 || featureIndex === props.features.length - 1) ? '0' : '0 2em'}>
           <h3>{feature.name}</h3>
           {feature.imageSrc && <img src={feature.imageSrc} alt={feature.name} title={feature.name} />}
           {feature.description && <p className='description'>{feature.description}</p>}
