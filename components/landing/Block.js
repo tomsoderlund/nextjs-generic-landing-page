@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Block = ({ children, className, style, background, padding = '0 1em' }) => (
+const Block = ({ children, fullWidth = true, className, style, background, padding = '0 1em' }) => (
   <div
-    className={`block ${className || ''}`}
+    className={[
+      'block',
+      ...(fullWidth ? [] : ['not-full-width']),
+      ...(className ? [className] : [])
+    ].join(' ')}
     style={style}
   >
     {children}
