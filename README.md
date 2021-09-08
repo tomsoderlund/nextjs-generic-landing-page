@@ -85,12 +85,21 @@ Test the static HTML:
     cd out
     python -m SimpleHTTPServer
 
+### Styling
+
+Modify `public/theme.css` (`public/app.css` is more structural).
+
+You can add fonts in `components/page/PageHead.js`.
+
 
 ## Update the NPM package
 
     yarn publish  # will run 'yarn prepublish' before
 
-## styled-jsx reference in package.json?
+
+## Miscellaneous
+
+### styled-jsx reference in package.json?
 
 Needed?
 Potential problems with version collisions?
