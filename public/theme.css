@@ -148,7 +148,7 @@ select:disabled {
 
 @media only screen and (min-width: 500px) {
   .block.not-full-width {
-    width: 60em;
+    max-width: 60em;
     margin: auto;
   }
 }
