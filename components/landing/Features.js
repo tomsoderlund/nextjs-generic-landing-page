@@ -26,6 +26,12 @@ const Features = (props) => (
             object-fit: contain;
           }
 
+          @media only screen and (max-width: 500px) {
+            :global(.feature.rows) {
+              padding: 0;
+            }
+          }
+
           :global(.feature .description) {
             margin-top: 0.5em;
           }
