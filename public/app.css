@@ -18,19 +18,6 @@ main {
   overflow-y: auto;
 }
 
-section.content {
-  width: calc(100% - 2.5em);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 480px) {
-  .content {
-    width: 90%;
-    max-width: none;
-  }
-}
-
 @media only screen and (max-width: 480px) {
   input, button {
     width: 100%;
