@@ -41,3 +41,8 @@ footer a {
 .signup-form .thankyou {
   margin: 2em 0;
 }
+
+li {
+  margin-bottom: 0.4em;
+  text-align: left;
+}

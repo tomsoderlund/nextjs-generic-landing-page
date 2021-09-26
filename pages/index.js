@@ -62,7 +62,9 @@ const LandingPage = () => (
       fullWidth={false}
     />
 
-    <Pricing />
+    <Pricing
+      products={config.appProducts}
+    />
 
     <Video
       src='https://www.youtube.com/embed/UjtVVsz-mMg'

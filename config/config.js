@@ -18,7 +18,7 @@ const completeConfig = {
         name: 'Feature 1',
         description: 'This is the 1st important feature. This is totally amazing.',
         imageSrc: '/features/feature1.jpg',
-        link: 'https://www.tomorroworld.com/',
+        link: 'https://github.com/tomsoderlund/nextjs-generic-landing-page',
         target: '_blank'
       },
       {
@@ -30,6 +30,36 @@ const completeConfig = {
         name: 'Feature 3',
         description: 'This is the 3rd important feature. This is totally insanely amazing.',
         imageSrc: '/features/feature3.jpg'
+      }
+    ],
+    appProducts: [
+      {
+        reference: 'basic',
+        name: 'Basic package',
+        features: [
+          'Complete source code',
+          'Template ready to use'
+        ],
+        action: {
+          label: 'Free download',
+          href: 'https://github.com/tomsoderlund/nextjs-generic-landing-page',
+          target: '_blank',
+          rel: 'noopener noreferrer'
+        }
+      },
+      {
+        reference: 'complete',
+        name: 'Complete package',
+        features: [
+          'Support a developer',
+          'Get gratitude'
+        ],
+        action: {
+          label: '$9',
+          href: 'https://ko-fi.com/tomsoderlund',
+          target: '_blank',
+          rel: 'noopener noreferrer'
+        }
       }
     ],
     locale: 'en_US',

@@ -37,7 +37,8 @@ a:active {
 }
 
 /* #NiceAndSimple: Button - http://codepen.io/tomsoderlund/pen/qqyzqp */
-button {
+button,
+.button {
   background-color: #663399;
   color: #FFFFFF;
   position: relative;
@@ -52,6 +53,7 @@ button {
   font-size: inherit;
   line-height: normal;
   font-weight: normal;
+  text-decoration: none;
   text-align: center;
   outline: none;
   padding: 0.6em;
@@ -59,23 +61,28 @@ button {
   transition: all 0.2s;
   min-width: 7em;
 }
-button:focus:not(:disabled) {
+button:focus:not(:disabled),
+.button:focus:not(:disabled) {
   opacity: 0.8;
 }
-button:hover:not(:disabled) {
+button:hover:not(:disabled),
+.button:hover:not(:disabled) {
   opacity: 0.8;
   top: -0.1em;
 }
-button:hover:active {
+button:hover:active,
+.button:hover:active {
   top: 0.1em;
   transition: all 0.05s;
 }
-button:disabled {
+button:disabled,
+.button:disabled {
   cursor: initial;
   background-color: silver;
 }
 
-button.primary:not(:disabled) {
+button.primary:not(:disabled),
+.button.primary:not(:disabled) {
   background-color: #00CED1;
 }
 
