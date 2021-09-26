@@ -19,6 +19,24 @@ Did you or your company find `nextjs-generic-landing-page` useful? Please consid
 [![Support Tom on Ko-Fi.com](https://www.tomsoderlund.com/ko-fi_tomsoderlund_50.png)](https://ko-fi.com/tomsoderlund)
 
 
+## Why is this awesome?
+
+This is a great template for a any project where you want **React** (with **static site generation (SSG)** or **server-side rendering (SSR)**, powered by [Next.js](https://github.com/zeit/next.js)) as frontend. *Lightning fast, all JavaScript.*
+
+* Great starting point for a landing page or simple website.
+* Use `yarn export` to export pure HTML pages.
+* Prepared for PWA features with a `manifest.json`.
+* Can use SSG `getStaticProps` or SSR `getServerSideProps`.
+* Easy to style the visual theme using CSS (e.g. using [Design Profile Generator](https://tomsoderlund.github.io/design-profile-generator/)).
+* Google Analytics and `google-site-verification` support (see `config/config.js`).
+* Flexible configuration with `config/config.js` and `.env.local` file.
+* Code linting and formatting with StandardJS (`yarn lint`/`yarn fix`).
+* Unit testing with Jasmine (`yarn unit`, not yet included).
+* Good page speed, see [Lighthouse](https://developers.google.com/web/tools/lighthouse) score:
+
+![Lighthouse score](docs/lighthouse_score.png)
+
+
 ## Demo
 
 [Demo of nextjs-generic-landing-page hosted on Vercel](https://nextjs-generic-landing-page.vercel.app/)
@@ -33,7 +51,7 @@ Did you or your company find `nextjs-generic-landing-page` useful? Please consid
 - [x] Video
 - [x] 3 features
 - [x] Google Analytics with page & event logging
-- [ ] Pricing/product comparison table
+- [x] Pricing/product comparison table
 - [ ] Testimonials (3 people)
 - [ ] Login link
 - [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
