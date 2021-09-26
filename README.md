@@ -1,4 +1,4 @@
-# nextjs-generic-landing-page
+# Next.js generic landing page template
 
 A generic landing page template, built in Next.js (React) with static HTML export.
 
@@ -60,22 +60,7 @@ This is a great template for a any project where you want **React** (with **stat
 
 ## How to use
 
-### How to use 1: Import just the components you need
-
-    yarn add nextjs-generic-landing-page  # or npm install nextjs-generic-landing-page
-
-Then in your code:
-
-    import { Headline, Video } from 'nextjs-generic-landing-page'
-
-    <Headline
-      title='My Website'
-      description='Maybe the best website ever'
-    />
-
-See [pages/index.js](pages/index.js) for examples on how to use the components.
-
-### How to use 2: Clone the entire project
+### How to use 1: Clone the entire project
 
 Clone this repository:
 
@@ -103,6 +88,21 @@ Test the static HTML:
     cd out
     python -m SimpleHTTPServer
 
+### How to use 2: Import just the components you need
+
+    yarn add nextjs-generic-landing-page  # or npm install nextjs-generic-landing-page
+
+Then in your code:
+
+    import { Headline, Video } from 'nextjs-generic-landing-page'
+
+    <Headline
+      title='My Website'
+      description='Maybe the best website ever'
+    />
+
+See [pages/index.js](pages/index.js) for examples on how to use the components.
+
 ### Styling
 
 Modify `public/theme.css` (`public/app.css` is more structural).
@@ -113,11 +113,3 @@ You can add fonts in `components/page/PageHead.js`.
 ## Update the NPM package
 
     yarn publish  # will run 'yarn prepublish' before
-
-
-## Miscellaneous
-
-### styled-jsx reference in package.json?
-
-Needed?
-Potential problems with version collisions?
