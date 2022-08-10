@@ -110,6 +110,15 @@ Modify `public/theme.css` (`public/app.css` is more structural).
 You can add fonts in `components/page/PageHead.js`.
 
 
+### Removing landing page components
+
+If you want to use this as a Next.js boilerplate, without landing page stuff:
+
+    rm pages/standalone.js
+    rm components/index.js
+    rm -rf components/landing
+    rm -rf components/social
+
 ## Update the NPM package
 
     yarn publish  # will run 'yarn prepublish' before
