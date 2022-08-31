@@ -42,22 +42,6 @@ This is a great template for a any project where you want **React** (with **stat
 [Demo of nextjs-generic-landing-page hosted on Vercel](https://nextjs-generic-landing-page.vercel.app/)
 
 
-## Components
-
-- [x] Title/Tagline
-- [x] Footer
-- [x] Signup form
-- [x] Image
-- [x] Video
-- [x] 3 features
-- [x] Google Analytics with page & event logging
-- [x] Pricing/product comparison table
-- [ ] Testimonials (3 people)
-- [ ] Login link
-- [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
-- [ ] Try the app (interactive)
-
-
 ## How to use
 
 ### How to use 1: Clone the entire project
@@ -109,7 +93,6 @@ Modify `public/theme.css` (`public/app.css` is more structural).
 
 You can add fonts in `components/page/PageHead.js`.
 
-
 ### Removing landing page components
 
 If you want to use this as a Next.js boilerplate, without landing page stuff:
@@ -119,10 +102,25 @@ If you want to use this as a Next.js boilerplate, without landing page stuff:
     rm -rf components/landing
     rm -rf components/social
 
+
 ## Update the NPM package
 
     yarn publish  # will run 'yarn prepublish' before
 
+
 ## Todo:
 
 - [ ] Make it look more like https://airfocus.com/
+- Components
+    - [x] Title/Tagline
+    - [x] Footer
+    - [x] Signup form
+    - [x] Image
+    - [x] Video
+    - [x] 3 features
+    - [x] Google Analytics with page & event logging
+    - [x] Pricing/product comparison table
+    - [ ] Testimonials (3 people)
+    - [ ] Login link
+    - [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
+    - [ ] Try the app (interactive)
