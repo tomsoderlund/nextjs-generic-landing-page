@@ -122,3 +122,7 @@ If you want to use this as a Next.js boilerplate, without landing page stuff:
 ## Update the NPM package
 
     yarn publish  # will run 'yarn prepublish' before
+
+## Todo:
+
+- [ ] Make it look more like https://airfocus.com/
