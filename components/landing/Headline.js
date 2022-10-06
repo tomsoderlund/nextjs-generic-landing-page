@@ -10,7 +10,7 @@ const Headline = (props) => (
     {...props}
   >
     {props.title && <h1>{props.title}</h1>}
-    {props.description && <h2>{props.description}</h2>}
+    {props.description && <h2 className='description'>{props.description}</h2>}
     {props.children && <>{props.children}</>}
   </Block>
 )

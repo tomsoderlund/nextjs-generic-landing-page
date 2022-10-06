@@ -14,7 +14,7 @@ h1, h2, h3, th {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
 }
 
 h2 {
@@ -23,6 +23,10 @@ h2 {
 
 h3 {
   font-size: 1.3em;
+}
+
+h2.description {
+  font-weight: normal;
 }
 
 a {
