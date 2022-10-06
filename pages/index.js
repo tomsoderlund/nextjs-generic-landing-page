@@ -56,13 +56,13 @@ const LandingPage = () => (
       Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
     </Block>
 
-    <Features
-      features={config.appFeatures}
+    <Image
+      src='/features/feature1.jpg'
       fullWidth={false}
     />
 
-    <Image
-      src='/features/feature1.jpg'
+    <Features
+      features={config.appFeatures}
       fullWidth={false}
     />
 

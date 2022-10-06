@@ -5,7 +5,7 @@ import LinkOptional from './LinkOptional'
 
 /** [{ name, (description), (imageSrc) }] */
 const Features = (props) => (
-  <Block className='columns' padding='1em 0 2em' {...props}>
+  <Block className='columns' padding='1em 0' {...props}>
     {props.features.map((feature, featureIndex) => (
       <LinkOptional
         key={feature.name}

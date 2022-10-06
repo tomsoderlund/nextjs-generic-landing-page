@@ -47,11 +47,11 @@ const LandingPage = () => (
       Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
     </Block>
 
-    <Features features={config.appFeatures} />
-
     <Image src='/features/feature1.jpg' />
 
-    <Pricing />
+    <Features features={config.appFeatures} />
+
+    <Pricing products={config.appProducts} />
 
     <Video
       src='https://www.youtube.com/embed/vEc1tm7novI'
@@ -206,7 +206,7 @@ const SignupForm = ({ leadService, googleEventName = 'Lead sign up', buttonText 
 }
 
 const Features = (props) => (
-  <Block className='columns' padding='1em 0 2em' {...props}>
+  <Block className='columns' padding='1em 0' {...props}>
     {props.features.map(feature => (
       <LinkOptional
         key={feature.name}
@@ -293,11 +293,71 @@ const Video = (props) => {
   )
 }
 
-const Pricing = (props) => (
-  <Block {...props}>
-    <h2>Pricing</h2>
-  </Block>
-)
+const Pricing = ({ products, onSelect, title = 'Pricing', inProgress, ...otherProps }) => {
+  return (
+    <Block padding='0 1em 2em' {...otherProps}>
+      <h2>{title}</h2>
+      <table>
+        <thead>
+          <tr>
+            {products.map((product, pIndex) => (
+              <th key={pIndex}>{product.name}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {products.map((product, pIndex) => (
+              <td key={pIndex}>
+                <ul>
+                  {product.features.map((feature, fIndex) => (
+                    <li key={fIndex}>{feature}</li>
+                  ))}
+                </ul>
+              </td>
+            ))}
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            {products.map((product, pIndex) => {
+              const { label, ...actionProps } = product.action
+              return (
+                <td key={pIndex}>
+                  <a
+                    {...actionProps}
+                    onClick={e => onSelect && onSelect(product.reference)}
+                    className={'button primary progress-animation ' + (product.action.className || '') + (inProgress ? ' in-progress' : '')}
+                  >
+                    {label}
+                  </a>
+                </td>
+              )
+            })}
+          </tr>
+        </tfoot>
+      </table>
+
+      <style jsx>{`
+        table {
+          table-layout: fixed;
+          margin: auto;
+          width: 100%;
+          max-width: 60em;
+        }
+
+        td {
+          vertical-align: top;
+        }
+
+        .button {
+          min-width: 10em;
+        }
+      `}
+      </style>
+    </Block>
+  )
+}
 
 const Testimonials = (props) => (
   <Block {...props}>
