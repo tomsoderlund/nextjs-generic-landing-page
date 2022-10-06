@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = ({ children }) => (
   <footer
-    className='color-header-bg color-background-fg'
+    className='color-footer-bg color-footer-fg'
   >
     {children}
     <style jsx>{`

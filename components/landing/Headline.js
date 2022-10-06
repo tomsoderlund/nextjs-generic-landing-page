@@ -6,7 +6,7 @@ import Block from './Block'
 const Headline = (props) => (
   <Block
     padding='1em'
-    className='headline color-header-bg color-background-fg'
+    className='headline color-header-bg color-header-fg'
     {...props}
   >
     {props.title && <h1>{props.title}</h1>}
