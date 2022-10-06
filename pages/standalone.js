@@ -54,7 +54,7 @@ const LandingPage = () => (
     <Pricing />
 
     <Video
-      src='https://www.youtube.com/embed/UjtVVsz-mMg'
+      src='https://www.youtube.com/embed/vEc1tm7novI'
       controls={false}
     />
 
