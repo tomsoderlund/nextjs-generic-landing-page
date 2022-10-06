@@ -5,7 +5,7 @@ import SignupForm from './SignupForm'
 
 const SignupBlock = (props) => {
   return (
-    <Block className='signup-block' padding='1em' {...props}>
+    <Block className='signup-block' {...props}>
       <SignupForm {...props} />
     </Block>
   )

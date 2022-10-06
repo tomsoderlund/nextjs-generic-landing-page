@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Block = ({ children, fullWidth = true, className, style, background, padding = '0 1em' }) => (
+const Block = ({ children, fullWidth = true, className, style, background, padding = '1em' }) => (
   <div
     className={[
       'block',

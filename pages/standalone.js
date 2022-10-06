@@ -43,7 +43,7 @@ const LandingPage = () => (
 
     <CustomSignupBlock />
 
-    <Block padding='1em'>
+    <Block padding='2em 1em'>
       Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
     </Block>
 
@@ -113,7 +113,7 @@ const Block = ({ children, className, style, background, padding = '0 1em' }) =>
 
 const Headline = (props) => (
   <Block
-    padding='1em'
+    padding='2em 1em'
     className='headline color-header-bg color-header-fg'
     {...props}
   >
@@ -133,7 +133,7 @@ const CustomSignupBlock = () => (
 
 const SignupBlock = (props) => {
   return (
-    <Block className='signup-block' padding='1em' {...props}>
+    <Block className='signup-block' {...props}>
       <SignupForm {...props} />
     </Block>
   )

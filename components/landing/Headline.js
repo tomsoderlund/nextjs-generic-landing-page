@@ -5,7 +5,7 @@ import Block from './Block'
 /** { title, description } */
 const Headline = (props) => (
   <Block
-    padding='1em'
+    padding='2em 1em'
     className='headline color-header-bg color-header-fg'
     {...props}
   >

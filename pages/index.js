@@ -52,7 +52,7 @@ const LandingPage = () => (
 
     <CustomSignupBlock />
 
-    <Block padding='1em'>
+    <Block padding='2em 1em'>
       Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
     </Block>
 

@@ -4,7 +4,7 @@ import Block from './Block'
 
 const Pricing = ({ products, onSelect, title = 'Pricing', inProgress, ...otherProps }) => {
   return (
-    <Block padding='1em' {...otherProps}>
+    <Block padding='2em 1em' {...otherProps}>
       <h2>{title}</h2>
       <table>
         <thead>
