@@ -163,3 +163,7 @@ select:disabled {
     margin: auto;
   }
 }
+
+.social-share-and-follow button {
+  background-color: lightgray;
+}

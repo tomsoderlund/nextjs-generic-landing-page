@@ -36,12 +36,15 @@
     }
   },
   "dependencies": {
+    "add": "^2.0.6",
     "next": "^11.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-fb-like": "^0.5.1",
     "react-share": "^3.0.1",
-    "react-twitter-embed": "^3.0.3"
+    "react-share-follow": "^1.1.4",
+    "react-twitter-embed": "^3.0.3",
+    "yarn": "^1.22.19"
   },
   "peerDependencies": {
     "styled-jsx": "latest"

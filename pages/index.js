@@ -1,19 +1,17 @@
 // External packages used:
 //   yarn add react-share react-twitter-embed react-fb-like
 import React from 'react'
+import { SocialShareAndFollow } from 'react-share-follow'
 
 import {
   PageHead,
   Block,
-  ContainerFlex,
   Features,
   Footer,
   Headline,
   Image,
   Pricing,
   SignupBlock,
-  SocialFollow,
-  SocialSharing,
   Testimonials,
   Video
 } from 'components'
@@ -28,22 +26,28 @@ const LandingPage = () => (
       title={config.appName}
       description={config.appDescription}
     >
-      <ContainerFlex>
-        <span>Share:{' '}</span>
-        <SocialSharing
-          link={config.appUrl}
-          title={config.appName}
-          body={config.appTagline}
-        />
-      </ContainerFlex>
-      <ContainerFlex align='flex-start' margin='1em 0 0'>
-        <span>Follow:{' '}</span>
-        <SocialFollow
-          facebookLink='https://www.facebook.com/tomorroworldcom/'
-          twitterName='tomsoderlund'
-          instagramName='tomsoderlund'
-        />
-      </ContainerFlex>
+      <SocialShareAndFollow
+        title={config.appName}
+        description={config.appDescription}
+        iconColor='#555555'
+        share={{
+          copy: true,
+          email: true,
+          sms: false,
+          facebook: true,
+          twitter: true,
+          reddit: false,
+          pinterest: false,
+          linkedin: true
+        }}
+        follow={{
+          web: 'https://www.tomorroworld.com/',
+          twitter: 'TomorroworldAB',
+          instagram: 'tomsoderlund',
+          linkedin: 'company/tomorroworld'
+        }}
+        onShare={({ message }) => window.alert(message)}
+      />
     </Headline>
 
     <CustomSignupBlock />

@@ -2,6 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 
 // Import global CSS files here
+import 'node_modules/react-share-follow/dist/SocialShareAndFollow.css'
 import 'public/app.css'
 import 'public/theme.css'
 
