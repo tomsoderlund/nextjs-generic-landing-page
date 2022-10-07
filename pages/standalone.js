@@ -74,7 +74,7 @@ const LandingPage = () => (
     <CustomSignupBlock />
 
     <Footer>
-      &copy; Company, Inc. | <a href='https://www.tomorroworld.com/' target='_blank' rel='noopener noreferrer'>Tomorroworld</a>
+      &copy; Company, Inc. | <a href='https://www.tomorroworld.com/' target='_blank' rel='noopener noreferrer'>Template by Tomorroworld</a>
     </Footer>
   </main>
 )
