@@ -12,7 +12,7 @@ const completeConfig = {
     appUrl: `https://${appSlug}.vercel.app/`,
     appName: manifest.name,
     appTagline: 'Best landing page template ever',
-    appDescription: 'Best landing page template ever. A generic landing page template, built in Next.js (React) with static HTML export',
+    appDescription: 'Best landing page template ever. A generic landing page template, built in Next.js (React) with static HTML export.',
     appFeatures: [
       {
         name: 'Feature 1',
@@ -55,7 +55,7 @@ const completeConfig = {
           'Get gratitude'
         ],
         action: {
-          label: '$9',
+          label: 'Donate $9',
           href: 'https://ko-fi.com/tomsoderlund',
           target: '_blank',
           rel: 'noopener noreferrer'
