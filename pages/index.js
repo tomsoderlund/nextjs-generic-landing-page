@@ -23,7 +23,7 @@ const LandingPage = () => (
     <PageHead />
 
     <Headline
-      title={config.appName}
+      title={config.appTagline}
       description={config.appDescription}
     >
       <SocialShareAndFollow
