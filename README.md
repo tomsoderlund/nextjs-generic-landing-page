@@ -122,5 +122,5 @@ If you want to use this as a Next.js boilerplate, without landing page stuff:
     - [x] Pricing/product comparison table
     - [ ] Testimonials (3 people)
     - [ ] Login link
-    - [ ] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
+    - [x] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
     - [ ] Try the app (interactive)
