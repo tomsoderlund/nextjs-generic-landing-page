@@ -8,7 +8,7 @@ const Features = (props) => (
   <>
     {props.headline && <h2>{props.headline}</h2>}
 
-    <Block className='columns' padding='1em 0' {...props}>
+    <Block className='not-full-width columns' padding='1em 0' {...props}>
       {props.features.map((feature, featureIndex) => (
         <LinkOptional
           key={feature.name}
