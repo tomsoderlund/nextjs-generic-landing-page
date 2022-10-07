@@ -30,6 +30,11 @@ const Features = (props) => (
             :global(.feature.rows) {
               padding: 0;
             }
+
+            :global(.feature .description) {
+              margin-left: 0.5em;
+              margin-right: 0.5em;
+            }  
           }
 
           :global(.feature .description) {
