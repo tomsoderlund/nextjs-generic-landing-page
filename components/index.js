@@ -12,7 +12,3 @@ export { default as SignupBlock } from './landing/SignupBlock'
 export { default as SignupForm } from './landing/SignupForm'
 export { default as Testimonials } from './landing/Testimonials'
 export { default as Video } from './landing/Video'
-
-export { default as InstagramFollowButton } from './social/InstagramFollowButton'
-export { default as SocialFollow } from './social/SocialFollow'
-export { default as SocialSharing } from './social/SocialSharing'
