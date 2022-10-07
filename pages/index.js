@@ -57,7 +57,7 @@ const LandingPage = () => (
     </Block>
 
     <Image
-      src='/features/feature1.jpg'
+      src='https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80'
       fullWidth={false}
     />
 
@@ -71,7 +71,7 @@ const LandingPage = () => (
     />
 
     <Video
-      src='https://www.youtube.com/embed/vEc1tm7novI'
+      src='https://www.youtube.com/embed/-8-ZyyQy3hU'
       controls={false}
       fullWidth={false}
     />

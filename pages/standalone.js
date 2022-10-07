@@ -62,7 +62,7 @@ const LandingPage = () => (
     />
 
     <Video
-      src='https://www.youtube.com/embed/vEc1tm7novI'
+      src='https://www.youtube.com/embed/-8-ZyyQy3hU'
       controls={false}
       fullWidth={false}
     />
