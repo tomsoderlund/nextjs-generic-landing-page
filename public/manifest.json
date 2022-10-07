@@ -1,7 +1,5 @@
 {
   "name": "Generic Landing Page",
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
   "icons": [
     {
       "src": "favicon.png",
