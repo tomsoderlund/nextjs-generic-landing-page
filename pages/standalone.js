@@ -47,15 +47,24 @@ const LandingPage = () => (
       Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
     </Block>
 
-    <Image src='/features/feature1.jpg' />
+    <Image
+      src='/features/feature1.jpg'
+      fullWidth={false}
+    />
 
-    <Features features={config.appFeatures} />
+    <Features
+      features={config.appFeatures}
+      fullWidth={false}
+    />
 
-    <Pricing products={config.appProducts} />
+    <Pricing
+      products={config.appProducts}
+    />
 
     <Video
       src='https://www.youtube.com/embed/vEc1tm7novI'
       controls={false}
+      fullWidth={false}
     />
 
     <Testimonials
