@@ -53,7 +53,7 @@ const LandingPage = () => (
     <CustomSignupBlock />
 
     <Block padding='2em 1em'>
-      Get the source code from <a href='https://github.com/tomsoderlund/nextjs-generic-landing-page'>https://github.com/tomsoderlund/nextjs-generic-landing-page</a>
+      Get the source code from <a className='button' href='https://github.com/tomsoderlund/nextjs-generic-landing-page' target='_blank' rel='noopener noreferrer'>GitHub</a>
     </Block>
 
     <Image
@@ -83,7 +83,7 @@ const LandingPage = () => (
     <CustomSignupBlock />
 
     <Footer>
-      &copy; Company, Inc.
+      &copy; Company, Inc. | <a href='https://www.tomorroworld.com/' target='_blank' rel='noopener noreferrer'>Tomorroworld</a>
     </Footer>
   </main>
 )
