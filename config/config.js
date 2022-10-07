@@ -15,20 +15,20 @@ const completeConfig = {
     appDescription: 'A generic landing page template, built in Next.js (React) with static HTML export.',
     appFeatures: [
       {
-        name: 'Feature 1',
-        description: 'This is the 1st important feature. This is totally amazing.',
+        name: 'Great starting point',
+        description: 'Great starting point for a landing page or simple website.',
         imageSrc: 'https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZmZlZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60',
         link: 'https://github.com/tomsoderlund/nextjs-generic-landing-page',
         target: '_blank'
       },
       {
-        name: 'Feature 2',
-        description: 'This is the 2nd important feature. This is totally crazy amazing.',
+        name: 'Export HTML',
+        description: 'Use `yarn export` to export pure HTML pages.',
         imageSrc: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29mZmVlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
       },
       {
-        name: 'Feature 3',
-        description: 'This is the 3rd important feature. This is totally insanely amazing.',
+        name: 'Easy to customize',
+        description: 'Change content and CSS styles easily.',
         imageSrc: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29mZmVlfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
       }
     ],

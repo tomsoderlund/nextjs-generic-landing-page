@@ -52,7 +52,7 @@ const LandingPage = () => (
     <CustomSignupBlock />
 
     <Block padding='2em 1em'>
-      Get the source code from <a className='button' href='https://github.com/tomsoderlund/nextjs-generic-landing-page' target='_blank' rel='noopener noreferrer'>GitHub</a>
+      Get the template source code from <a className='button' href='https://github.com/tomsoderlund/nextjs-generic-landing-page' target='_blank' rel='noopener noreferrer'>GitHub</a>
     </Block>
 
     <Image
