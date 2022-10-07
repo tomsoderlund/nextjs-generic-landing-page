@@ -12,7 +12,6 @@ import {
   Image,
   Pricing,
   SignupBlock,
-  Testimonials,
   Video
 } from 'components'
 
@@ -76,8 +75,9 @@ const LandingPage = () => (
       fullWidth={false}
     />
 
-    <Testimonials
+    <Features
       headline='What our customers are saying'
+      features={config.appTestimonials}
     />
 
     <CustomSignupBlock />

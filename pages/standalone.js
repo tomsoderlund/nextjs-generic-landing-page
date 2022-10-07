@@ -67,8 +67,9 @@ const LandingPage = () => (
       fullWidth={false}
     />
 
-    <Testimonials
+    <Features
       headline='What our customers are saying'
+      features={config.appTestimonials}
     />
 
     <CustomSignupBlock />
@@ -378,12 +379,6 @@ const Pricing = ({ products, onSelect, title = 'Pricing', inProgress, ...otherPr
     </Block>
   )
 }
-
-const Testimonials = (props) => (
-  <Block {...props}>
-    {props.headline && <h2>{props.headline}</h2>}
-  </Block>
-)
 
 const Footer = ({ children }) => (
   <footer

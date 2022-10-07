@@ -120,7 +120,7 @@ If you want to use this as a Next.js boilerplate, without landing page stuff:
     - [x] 3 features
     - [x] Google Analytics with page & event logging
     - [x] Pricing/product comparison table
-    - [ ] Testimonials (3 people)
+    - [x] Testimonials (3 people)
     - [ ] Login link
     - [x] [React Social Share & Follow](https://github.com/tomsoderlund/react-share-follow)
     - [ ] Try the app (interactive)

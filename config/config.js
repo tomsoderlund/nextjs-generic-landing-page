@@ -62,6 +62,18 @@ const completeConfig = {
         }
       }
     ],
+    appTestimonials: [
+      {
+        name: 'Ida Lowry',
+        description: '“I loved it!”',
+        imageSrc: 'https://screens.tomorroworld.com/image?width=400&height=240&dpr=1&time=networkidle0&url=https://m.media-amazon.com/images/M/MV5BZTc0ZjU5ZWEtYzVhZC00N2QwLWE4OWQtYzExMGZiYWJiNDAwXkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg'
+      },
+      {
+        name: 'Sam Lowry',
+        description: '“This was amazing!”',
+        imageSrc: 'https://screens.tomorroworld.com/image?width=400&height=240&dpr=1&time=networkidle0&url=https://m.media-amazon.com/images/M/MV5BMjU5ZWFjZWMtNjRjZi00ZGFiLWI4NmUtNmRiMDU1MmEwZDMwXkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg'
+      }
+    ],
     locale: 'en_US',
     googleAnalyticsId: 'UA-XXXXXXX-X',
     googleSiteVerification: false,
