@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start -p 3010",
     "export": "next build && next export",
-    "x-prepublish": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next --plugins=styled-jsx/babel; done && cp package.json dist/",
+    "prepublish": "rm -rf dist && for folder in {components,lib,config,public}; do mkdir -p dist/${folder} && babel ${folder} -d dist/${folder} --copy-files --presets=@babel/preset-env,next --plugins=styled-jsx/babel; done && cp package.json dist/",
     "lint": "standard",
     "fix": "standard --fix"
   },
@@ -47,6 +47,10 @@
     "styled-jsx": "latest"
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-preset-next": "^1.4.0",
     "standard": "^14.3.4"
   }
 }
