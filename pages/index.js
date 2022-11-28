@@ -4,12 +4,14 @@ import React from 'react'
 import { SocialShareAndFollow } from 'react-share-follow'
 
 import {
-  PageHead,
   Block,
   Features,
   Footer,
+  Header,
   Headline,
   Image,
+  LinkOptional,
+  PageHead,
   Pricing,
   SignupBlock,
   Video
@@ -20,6 +22,11 @@ import { config } from 'config/config'
 const LandingPage = () => (
   <main>
     <PageHead />
+
+    <Header>
+      <LinkOptional href='#pricing'>Pricing</LinkOptional>
+      <LinkOptional href='#testimonials'>Testimonials</LinkOptional>
+    </Header>
 
     <Headline
       title={config.appTagline}
@@ -67,6 +74,7 @@ const LandingPage = () => (
 
     <Pricing
       products={config.appProducts}
+      id='pricing'
     />
 
     <Video
@@ -78,6 +86,7 @@ const LandingPage = () => (
     <Features
       headline='What our customers are saying'
       features={config.appTestimonials}
+      id='testimonials'
     />
 
     <CustomSignupBlock />

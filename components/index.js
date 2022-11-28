@@ -1,10 +1,11 @@
 export { default as ContainerFlex } from './page/ContainerFlex'
 export { default as PageHead } from './page/PageHead'
 export { default as Footer } from './page/Footer'
-// export { googlePageview, googleEvent } from './page/GoogleAnalytics'
+export { googlePageview, googleEvent } from './page/GoogleAnalytics'
 
 export { default as Block } from './landing/Block'
 export { default as Features } from './landing/Features'
+export { default as Header } from './page/Header'
 export { default as Headline } from './landing/Headline'
 export { default as LinkOptional } from './landing/LinkOptional'
 export { default as Image } from './landing/Image'

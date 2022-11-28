@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Block = ({ children, fullWidth = true, className, style, background, padding = '1em' }) => (
+const Block = ({ children, fullWidth = true, id, className, style, background, padding = '1em' }) => (
   <div
     className={[
       'block',
@@ -8,6 +8,7 @@ const Block = ({ children, fullWidth = true, className, style, background, paddi
       ...(className ? [className] : [])
     ].join(' ')}
     style={style}
+    id={id}
   >
     {children}
     <style jsx>{`
