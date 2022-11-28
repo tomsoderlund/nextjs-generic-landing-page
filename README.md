@@ -74,6 +74,8 @@ Test the static HTML:
 
 ### How to use 2: Import just the components you need
 
+https://www.npmjs.com/package/nextjs-generic-landing-page
+
     yarn add nextjs-generic-landing-page  # or npm install nextjs-generic-landing-page
 
 Then in your code:
