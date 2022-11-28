@@ -11,7 +11,7 @@ const completeConfig = {
     appSlug,
     appUrl: `https://${appSlug}.vercel.app/`,
     appName: manifest.name,
-    appTagline: 'The best landing page template',
+    appTagline: 'A soft landing for your next project',
     appDescription: 'A generic landing page template, built in Next.js (React) with static HTML export.',
     appFeatures: [
       {
