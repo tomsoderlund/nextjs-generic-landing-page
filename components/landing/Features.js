@@ -35,7 +35,7 @@ const Features = (props) => (
         object-fit: contain;
       }
 
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 480px) {
         :global(.feature.rows) {
           padding: 0;
         }

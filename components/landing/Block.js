@@ -32,7 +32,7 @@ const Block = ({ children, fullWidth = true, id, className, style, background, p
         align-items: center;
       }
 
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 480px) {
         div.columns {
           flex-direction: column;
         }

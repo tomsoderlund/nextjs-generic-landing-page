@@ -111,7 +111,7 @@ const Block = ({ children, className, style, background, padding = '1em' }) => (
         align-items: center;
       }
 
-      @media only screen and (max-width: 500px) {
+      @media only screen and (max-width: 480px) {
         div.columns {
           flex-direction: column;
         }
@@ -237,7 +237,7 @@ const Features = (props) => (
             object-fit: contain;
           }
 
-          @media only screen and (max-width: 500px) {
+          @media only screen and (max-width: 480px) {
             :global(.feature.rows) {
               padding: 0;
             }
