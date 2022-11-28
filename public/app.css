@@ -30,13 +30,18 @@ summary {
   margin: 1em 0;
 }
 
+header,
+footer {
+  font-size: 0.8em;
+}
+
 header a {
   color: inherit;
   text-decoration: none;
 }
 
 footer {
-  padding: 1em;
+  padding: 1.5rem;
   color: gray;
 }
 
