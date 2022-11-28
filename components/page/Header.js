@@ -8,11 +8,11 @@ const Header = ({ title = config.appName, children }) => (
     className='color-header-bg color-header-fg darker'
   >
     <AppIcon />
-    
+
     {title && <span className='title'>{title}</span>}
-    
+
     {children}
-    
+
     <style jsx>{`
       :global(main) {
         margin-top: 50px;
@@ -34,6 +34,19 @@ const Header = ({ title = config.appName, children }) => (
 
       .title {
         font-weight: 500;
+      }
+
+      @media only screen and (max-width: 480px) {
+        header {
+          justify-content: space-between;
+          padding: 0 10px;
+        }
+
+        :global(.app-icon) {
+          position: unset !important;
+          left: unset !important;
+          top: unset !important;
+        }
       }
     `}
     </style>
