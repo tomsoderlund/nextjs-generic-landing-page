@@ -9,7 +9,7 @@ Can be used as:
 
 _Note: if you need a template for a complete PWA web app (with database etc) in Next.js, check out [nextjs-pwa-firebase-boilerplate](https://github.com/tomsoderlund/nextjs-pwa-firebase-boilerplate)._
 
-![nextjs-generic-landing-page](docs/github_preview.jpg)
+![nextjs-generic-landing-page](docs/nextjs-generic-landing-page.gif)
 
 
 ## Support this project
