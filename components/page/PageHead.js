@@ -4,7 +4,7 @@ import manifest from '../../public/manifest.json'
 import { config } from '../../config/config'
 import isDevelopment from '../../lib/isDevelopment'
 
-const PageHead = ({ title, description, path = '/' }) => {
+const PageHead = ({ title, description, imageUrl, iconUrl = '/favicon.png', path = '/' }) => {
   const pageTitle = title
     ? `${title} – ${config.appName}`
     : `${config.appName} – ${config.appTagline}`
@@ -12,10 +12,10 @@ const PageHead = ({ title, description, path = '/' }) => {
   const pageDescription = description || config.appDescription
 
   // SEO: title 60 characters, description 160 characters
-  if (isDevelopment()) console.log(`PageHead (dev):\n\ntitle (${60 - pageTitle.length}): “${pageTitle}”\n\ndescription (${160 - pageDescription.length}): “${pageDescription}”`)
+  if (isDevelopment()) console.log(`PageHead (dev):\n• title (${60 - pageTitle.length}): “${pageTitle}”\n• description (${160 - pageDescription.length}): “${pageDescription}”`)
 
-  const thumbnailUrl = undefined // `https://screens.myscreenshooterserver.com/?url=${config.appUrl}${path.slice(1)}${(path.includes('?') ? '&' : '?')}thumbnail=true`
-  const iconUrl = '/favicon.png'
+  const thumbnailUrl = imageUrl // ?? `https://screens.myscreenshooterserver.com/?url=${config.appUrl}${path.slice(1)}${(path.includes('?') ? '&' : '?')}thumbnail=true`
+
   const fonts = [
     ['Figtree', '300,400,500,700']
   ]
@@ -31,7 +31,7 @@ const PageHead = ({ title, description, path = '/' }) => {
 
       <link rel='manifest' href='/manifest.json' />
 
-      {fonts.map(font => <link key={font[0]} rel='stylesheet' href={`https://fonts.googleapis.com/css?family=${`${font[0].replace(/ /g, '+')}${font[1] ? ':' + font[1] : ''}`}&display=swap`} />)}
+      {fonts.map(([fontName, fontWeights]) => <link key={fontName} rel='stylesheet' href={`https://fonts.googleapis.com/css?family=${`${fontName.replace(/ /g, '+')}${fontWeights !== undefined ? `:${fontWeights}` : ''}`}&display=swap`} />)}
 
       <link rel='shortcut icon' type='image/x-icon' href={iconUrl} />
 
